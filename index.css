@@ -1,0 +1,10 @@
+.divClass{
+    border: 2px solid black;
+    margin-top: 10px;
+    min-height: 200px;
+}
+
+#dice-para{
+    font-size: 40px;
+    margin-top: 0%;
+}
