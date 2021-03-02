@@ -1,3 +1,5 @@
+//Remove uneccesary code
+//Used ES 6 template strings
 document.addEventListener("DOMContentLoaded", () => {
   document.querySelector("form").addEventListener("submit", (e) => {
     e.preventDefault();
@@ -54,21 +56,18 @@ document.addEventListener("DOMContentLoaded", () => {
             str += "&#9860";
             sum += dice;
             break;
-          case dice === 6:
+          default:
             str += "&#9861";
             sum += dice;
             break;
-          default:
-            console.log("Error in Switch.");
-            console.log(str);
         }
         counter++;
       }
       dicePara.innerHTML = str;
-      sumPara.textContent = "Sum = " + sum;
+      sumPara.textContent = `Sum =  ${sum}`;
       diceParaSumParaDiv.appendChild(dicePara);
       diceParaSumParaDiv.appendChild(sumPara);
-      listItem.innerHTML = str + " = " + sum;
+      listItem.innerHTML = `${str}   =   ${sum}`;
       uList.appendChild(listItem);
 
 
